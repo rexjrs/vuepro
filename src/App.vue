@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-    <router-view db="test"/>
+    <router-view :db="db" :storage="storage" />
   </div>
 </template>
 
@@ -13,6 +13,12 @@ export default {
   name: 'app',
   components: {
     NavBar,
+  },
+  data() {
+    return {
+      db,
+      storage,
+    };
   },
 };
 </script>

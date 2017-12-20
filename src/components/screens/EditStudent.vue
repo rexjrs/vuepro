@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'EditStudent',
+  name: 'edit-student',
 };
 </script>
